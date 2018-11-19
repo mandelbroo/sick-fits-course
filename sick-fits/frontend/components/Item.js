@@ -20,7 +20,7 @@ class Item extends Component {
         {item.image && <img src={item.image} alt={item.title} />}
         <PriceTag>{formatMoney(item.price)}</PriceTag>
         <Title>
-          <Link href={{ pathName: "/item", query: { id: item.id } }}>
+          <Link href={{ pathname: "item", query: { id: item.id } }}>
             <a>{item.title}</a>
           </Link>
         </Title>
